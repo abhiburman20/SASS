@@ -1,0 +1,27 @@
+footer {
+    background-color: black;
+    padding: 2rem 0;
+}
+.footer {
+    justify-content: space-between;
+}
+.logo-footer {
+    font-weight: 200;
+    padding-right: 5rem;
+    font-size: 2px;
+}
+.copyright {
+    padding-top: 2%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.nav-footer {
+    padding-top: 2%;
+    a {
+        padding: 0 0.75rem;
+    }
+}
+.flex-1 {
+    padding-left: 5rem;
+    display: flex;
+}

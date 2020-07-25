@@ -1,0 +1,23 @@
+.alt-campus {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/nfs-slider.jpg);
+    padding: 5% 5% 3% 5%;
+    text-align: center;
+}
+.article-altcamps {
+    flex-direction: row-reverse;
+    .frame-area {
+        display: block;
+        width: 100%;  /* RESPONSIVE WIDTH */
+        max-width: 400px;
+        height: 300px;
+        overflow: auto;  /* EDIT TO hidden FOR NO SCROLLBAR */
+        border: #999999 1px solid;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+.altcampus-logo {
+    border-radius: 10%;
+    width: 50rem;
+    height: 30rem;
+}

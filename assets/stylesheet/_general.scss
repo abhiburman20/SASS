@@ -1,0 +1,65 @@
+.flex {
+    display: flex;
+}
+.button {
+    border-radius: 10px ;
+    padding: 0 1rem;
+    a:hover {
+        color:  $primay-color;
+    }
+}
+.button-square {
+    color: $primay-color;
+    padding: 1rem;
+    border: 1px solid $primay-color;
+    margin: 0 1rem;
+    font-weight: bold;
+    &:hover {
+        color: white;
+        background-color: $primay-color;
+    }
+}
+.svg{
+    transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+}
+.svg:after {
+    content: "";
+    position: absolute;
+    background: #d19b26;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -2;
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+}
+.svg:hover{
+    color:white;
+    border: 0px #d19b26 solid;
+}
+.svg:hover:before {
+    opacity: .8;
+}
+.svg:hover:after {
+    top: 0;
+}
+
+// HAMBURG BUTTON
+
+#nav-button,
+label {
+    display: none;
+}
+.toggle:checked ~ .header-links {
+    display: inline-block;
+}
+.nav-item:hover,
+.link:hover {
+   color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+.button:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    border: 0.01rem solid var(--secondary-color);
+}

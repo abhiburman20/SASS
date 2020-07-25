@@ -1,0 +1,830 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 0 1rem;
+}
+
+.button a:hover {
+  color: #ffc311;
+}
+
+.button-square {
+  color: #ffc311;
+  padding: 1rem;
+  border: 1px solid #ffc311;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.button-square:hover {
+  color: white;
+  background-color: #ffc311;
+}
+
+.svg {
+  -webkit-transition: all 150ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 150ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.svg:after {
+  content: "";
+  position: absolute;
+  background: #d19b26;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -2;
+  -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.svg:hover {
+  color: white;
+  border: 0px #d19b26 solid;
+}
+
+.svg:hover:before {
+  opacity: .8;
+}
+
+.svg:hover:after {
+  top: 0;
+}
+
+#nav-button,
+label {
+  display: none;
+}
+
+.toggle:checked ~ .header-links {
+  display: inline-block;
+}
+
+.nav-item:hover,
+.link:hover {
+  color: white;
+  -webkit-box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+          box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  border: 0.01rem solid var(--secondary-color);
+}
+
+body {
+  background: url(https://promo-theme.com/plaxer/wp-content/uploads/2019/12/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1% auto;
+}
+
+.para-small {
+  font-size: 0.8rem;
+  margin: 5% auto;
+}
+
+header {
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5%;
+}
+
+.social-media-links {
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social-media-links i {
+  padding: 0 1rem 1rem 0;
+}
+
+.social-media-links i:hover {
+  color: #ffc311;
+}
+
+.button :nth-child(1) {
+  padding-right: 5px;
+}
+
+.button :nth-child(2) {
+  border-left: 1px solid white;
+  padding-left: 5px;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h1 .logo-colour {
+  color: #ffc311;
+}
+
+.nav a {
+  font-weight: bold;
+  color: white;
+  padding: 0 1rem;
+}
+
+.nav a:hover {
+  color: #ffc311;
+}
+
+.glow-on-hover {
+  width: 116px;
+  height: 24px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.mob-nav {
+  display: none;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 4%;
+}
+
+.hero .hero-article {
+  padding: 0 20%;
+}
+
+.hero-heading {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.hero-heading .logo-colour {
+  color: #ffc311;
+}
+
+.hero-links {
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-links .hero-links-item {
+  margin: 4rem 2rem;
+  padding: 0.8rem 0.5rem;
+  border-bottom: 2px solid white;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  outline: 0;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.hero-links .hero-links-item:hover {
+  color: white;
+  border-bottom: 2px solid #ffc311;
+}
+
+.about {
+  background-color: white;
+  max-width: 100%;
+  padding: 5%;
+}
+
+.about .about-article-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-2-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-2-bg.jpg);
+}
+
+.about .about-article-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-3-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-3-bg.jpg);
+}
+
+.about-article {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-1-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-1-bg.jpg);
+  margin: auto 1rem;
+  padding: 2rem;
+}
+
+.about-article .logo-colour {
+  color: #ffc311;
+}
+
+.about-tag {
+  color: #ffc311;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.about-heading {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.about-button {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.about-button:hover {
+  color: #ffc311;
+  border-bottom: 2px solid #ffc311;
+}
+
+.game {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/fs-7-1920x950.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/fs-7-1920x950.jpg);
+  padding: 5%;
+  background-attachment: local;
+  text-align: center;
+}
+
+.gamelinks {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto;
+}
+
+.gallery {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem auto;
+}
+
+.gallery-item {
+  padding: 14rem 1rem 1rem 1rem;
+  margin: 0 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/me-cover-384x488.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/me-cover-384x488.jpg);
+  background-size: cover;
+}
+
+.gallery-item.gallery-item-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/nfs-cover-384x488.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/nfs-cover-384x488.jpg);
+  background-size: cover;
+}
+
+.gallery-item.gallery-item-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/Planes-of-Gloria-384x488.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/Planes-of-Gloria-384x488.jpg);
+  background-size: cover;
+}
+
+.game-heading {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.game-para {
+  font-weight: bold;
+}
+
+.mob-game {
+  display: none;
+}
+
+.fifa {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2018/01/fifa-release-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2018/01/fifa-release-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5%;
+  text-align: center;
+}
+
+.article-fifa,
+.article-altcampus {
+  padding-top: 3rem;
+}
+
+.fifa-content,
+.altcampus-content {
+  padding: 3rem 5rem 0 5rem;
+}
+
+.fifa-heading,
+.altcampus-heading {
+  font-weight: 800;
+}
+
+.fifa-heading .logo-colour,
+.altcampus-heading .logo-colour {
+  color: #ffc311;
+}
+
+.fifa-para,
+.altcampus-para {
+  font-weight: bold;
+}
+
+.social-media {
+  background-color: whitesmoke;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.social-media i {
+  color: #ffc311;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.social-media a {
+  color: black;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-media a:hover {
+  color: #ffc311;
+}
+
+.article-socialmedia {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mob-social-media {
+  display: none;
+}
+
+.alt-campus {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/nfs-slider.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/nfs-slider.jpg);
+  padding: 5% 5% 3% 5%;
+  text-align: center;
+}
+
+.article-altcamps {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.article-altcamps .frame-area {
+  display: block;
+  width: 100%;
+  /* RESPONSIVE WIDTH */
+  max-width: 400px;
+  height: 300px;
+  overflow: auto;
+  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+}
+
+.altcampus-logo {
+  border-radius: 10%;
+  width: 50rem;
+  height: 30rem;
+}
+
+footer {
+  background-color: black;
+  padding: 2rem 0;
+}
+
+.footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-footer {
+  font-weight: 200;
+  padding-right: 5rem;
+  font-size: 2px;
+}
+
+.copyright {
+  padding-top: 2%;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav-footer {
+  padding-top: 2%;
+}
+
+.nav-footer a {
+  padding: 0 0.75rem;
+}
+
+.flex-1 {
+  padding-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://cdn.hipwallpaper.com/i/25/82/hpYibK.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.hipwallpaper.com/i/25/82/hpYibK.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    line-height: 1.5;
+  }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mob-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container {
+    padding: 0%;
+  }
+  .para-small {
+    font-size: 1rem;
+  }
+  .hero-links-item {
+    padding: 0.8rem 0.2rem !important;
+  }
+  .social-media-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 10%;
+    font-size: 2rem;
+    position: absolute;
+    justify-items: left;
+  }
+  .social-media-links .glow-on-hover {
+    display: none;
+  }
+  .social-media-links :nth-child(1) {
+    margin-bottom: 20%;
+  }
+  .social-media-links .fa-search {
+    display: none;
+  }
+  .mob-item {
+    display: none;
+  }
+  .nav-item {
+    margin-bottom: 2%;
+    font-size: 2rem;
+  }
+  .nav a {
+    color: #ffc311;
+    text-transform: uppercase;
+  }
+  .nav a:hover {
+    color: white;
+  }
+  .header-links {
+    display: none;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 20% 10%;
+  }
+  .mob-nav {
+    display: inline-block;
+    width: 139px;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .mob-fle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav,
+  .social-media-links {
+    margin-top: 10%;
+  }
+  .hero {
+    text-align: center;
+    padding: 10%;
+  }
+  .hero .hero-article {
+    padding: 0%;
+  }
+  .hero .hero-heading {
+    font-size: 3rem;
+  }
+  .about-article {
+    margin-bottom: 2%;
+  }
+  .button-square {
+    margin-bottom: 4%;
+  }
+  .game-item {
+    margin-bottom: 0%;
+  }
+  .game {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://i.pinimg.com/564x/b7/75/94/b775941e5d5d1aa125d45e1a7bac3ba8.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/564x/b7/75/94/b775941e5d5d1aa125d45e1a7bac3ba8.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0% auto;
+  }
+  .game .gallery {
+    margin-bottom: 10%;
+  }
+  .game .gallery .gallery-item {
+    margin-bottom: 5%;
+  }
+  .game .all-games {
+    margin-bottom: 4%;
+    display: inline-block;
+  }
+  .game .gamelinks {
+    display: none;
+  }
+  .mob-game {
+    display: inline-block;
+    width: 90%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/fs-7-1920x950.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/fs-7-1920x950.jpg);
+    padding: 5%;
+    background-attachment: local;
+    text-align: center;
+  }
+  .mob-game .gamelinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2rem auto;
+  }
+  iframe {
+    max-width: 100%;
+    height: 280px;
+  }
+  .article-fifa {
+    padding: 0%;
+  }
+  .fifa-content {
+    padding: 0%;
+  }
+  .social-media {
+    display: none;
+  }
+  .mob-social-media {
+    display: block;
+    padding: 15% 5%;
+  }
+  .instagram-media {
+    max-width: inherit !important;
+    min-width: auto !important;
+  }
+  .altcampus-content {
+    padding: 5%;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .logo-footer {
+    padding: 0%;
+  }
+  .footer .nav-footer {
+    display: none;
+  }
+  .footer .logo-footer {
+    font-weight: 800;
+  }
+  .flex-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0%;
+  }
+  label {
+    display: inline;
+  }
+  .logo,
+  label {
+    z-index: 100;
+  }
+  .fa-gamepad {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    color: #ffc311;
+  }
+  .fa-gamepad:hover {
+    color: white;
+  }
+  .header-links {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=style.css.map */

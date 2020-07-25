@@ -1,0 +1,217 @@
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    body {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn.hipwallpaper.com/i/25/82/hpYibK.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+        line-height: 1.5;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .mob-flex {
+        flex-direction: row;
+    }
+    .container {
+        padding: 0%;
+    }
+    .para-small {
+        font-size: 1rem;
+    }
+
+    // HEADER
+    .hero-links-item {
+        padding: 0.8rem 0.2rem !important;
+    }
+    .social-media-links {
+        justify-content: center;
+        text-align: center;
+        width: 10%;
+        font-size: 2rem;
+        position: absolute;
+        justify-items: left;
+        .glow-on-hover {
+            display: none;
+        }
+        :nth-child(1) {
+            margin-bottom: 20%;
+        }
+        .fa-search {
+            display: none;
+        }
+    }
+    .mob-item {
+        display: none;
+    }
+    .nav-item {
+        margin-bottom: 2%;
+        font-size: 2rem;
+    }
+    .nav a {
+        color: $primay-color;
+        text-transform: uppercase;
+        &:hover {
+            color: white;
+        }
+    }
+    .header-links {
+        display: none;
+        position: relative;
+        background: rgba(0, 0,0, 0.8); 
+        z-index: 99;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        padding: 20% 10%;
+    }
+    .mob-nav {
+        display: inline-block;
+        width: 139px;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .mob-fle {
+        justify-content: center;
+    }
+    .nav,
+    .social-media-links {
+        margin-top: 10%;
+    }
+    //hero
+
+    .hero {
+        text-align: center;
+        padding: 10%;
+        .hero-article {
+            padding: 0%;
+        }
+        .hero-heading {
+            font-size: 3rem;
+        }
+    }
+    
+    //about
+
+    .about-article {
+        margin-bottom: 2%;
+    }
+
+    //games
+    
+    .button-square {
+        margin-bottom: 4%;
+    }
+    .game-item {
+        margin-bottom: 0%;
+    }
+    .game {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://i.pinimg.com/564x/b7/75/94/b775941e5d5d1aa125d45e1a7bac3ba8.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 0% auto;
+        .gallery {
+            margin-bottom: 10%;
+            .gallery-item {
+                margin-bottom: 5%;
+            }
+        }
+        .all-games {
+            margin-bottom: 4%;
+            display: inline-block;
+        }
+        .gamelinks {
+            display: none;
+        }
+    }
+    .mob-game {
+        display: inline-block;
+        width: 90%;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/fs-7-1920x950.jpg);
+        padding: 5%;
+        background-attachment: local;
+        text-align: center;
+        .gamelinks {
+            justify-content: center;
+            margin: 2rem auto;
+        }
+    }
+
+    //Fifa
+    
+    iframe {
+        max-width: 100%;
+        height: 280px;
+    }
+    .article-fifa {
+        padding: 0%;
+    }
+    .fifa-content {
+        padding: 0%;
+    }
+
+    //social media
+
+    .social-media {
+        display: none;
+    }
+    .mob-social-media {
+        display: block;
+        padding: 15% 5%;
+    }
+    .instagram-media {
+        max-width: inherit !important;
+        min-width: auto !important;
+    }
+    //altcampus
+
+    .altcampus-content {
+        padding: 5%;
+    }
+    //footer
+
+    .footer {
+        text-align: center;
+        .logo-footer {
+            padding: 0%;
+        }
+        .nav-footer {
+            display: none;
+        }
+        .logo-footer {
+            font-weight: 800;
+        }
+    }
+    .flex-1 {
+        flex-direction: row;
+        padding: 0%;
+    }
+
+    // HAMBURG BUTTON
+
+    label {
+        display: inline;
+    }
+    .logo,
+    label {
+        z-index: 100;
+    }
+    .fa-gamepad {
+        font-size: 3rem;
+        padding-top: 1.5rem;
+        color: $primay-color;
+        &:hover {
+            color: white;
+        }
+    }
+    .header-links {
+        position: absolute;
+    }
+}

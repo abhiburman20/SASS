@@ -1,0 +1,26 @@
+.fifa {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2018/01/fifa-release-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5%;
+    text-align: center;
+}
+.article-fifa,
+.article-altcampus {
+    padding-top: 3rem;
+}
+.fifa-content,
+.altcampus-content {
+    padding: 3rem 5rem 0 5rem;
+}
+.fifa-heading,
+.altcampus-heading {
+    font-weight: 800;
+    .logo-colour {
+        color: $primay-color;
+    }
+}
+.fifa-para,
+.altcampus-para {
+    font-weight: bold;
+}

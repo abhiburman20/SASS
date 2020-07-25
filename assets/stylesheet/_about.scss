@@ -1,0 +1,36 @@
+.about {
+    background-color: white;
+    max-width: 100%;
+    padding:5%;
+    .about-article-2 {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-2-bg.jpg);
+    }
+    .about-article-3 {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-3-bg.jpg);
+    }
+}
+.about-article {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-1-bg.jpg);
+    margin: auto 1rem;
+    padding: 2rem;
+    .logo-colour {
+        color: $primay-color;
+    }
+}
+.about-tag {
+    color: $primay-color;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.about-heading {
+    font-weight: 800;
+    font-size: 2rem;
+}
+.about-button {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    &:hover {
+        color: $primay-color;
+        border-bottom: 2px solid $primay-color;
+    }
+}
